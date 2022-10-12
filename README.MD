@@ -6,6 +6,7 @@
 - [SNS](https://aws.amazon.com/pt/sns)
 - [S3](https://aws.amazon.com/pt/s3/)
 - [Firehose](https://aws.amazon.com/pt/kinesis/data-firehose/)
+- [DynamoDB](https://aws.amazon.com/pt/dynamodb)
 - [Databricks](https://www.databricks.com/)
 - [Delta Lake](https://delta.io/)
 - [Spark Streaming](https://spark.apache.org/docs/latest/streaming-programming-guide.html)
