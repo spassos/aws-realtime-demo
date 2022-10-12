@@ -1,0 +1,21 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "aws-lambda-covid-imunizacao",
+        "app_function": "sus.sindrome_respiratoria.lambda_function",
+        "lambda_handler": "sus.sindrome_respiratoria.lambda_function.lambda_handler",
+        "runtime": "python3.8",
+        "s3_bucket": "aws-lambda-covid-imunizacao-deployments-zappa",
+        "events": [{
+           "function": "sus.sindrome_respiratoria.lambda_function.lambda_handler",
+           "expression": "rate(1 minute)"
+       }],
+        "cloudwatch_log_level": "INFO",
+        "environment_variables": {
+            "SNS_TOPIC": "{{ env SNS_TOPIC }}",
+            "SUS_API_USER": "{{ env SUS_API_USER }}",
+            "SUS_API_PASSWORD": "{{ env SUS_API_PASSWORD }}"
+        }
+    }
+}
