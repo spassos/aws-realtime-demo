@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+zappa_security_policy.json
+ImunizationIngestor.checkpoint
